@@ -15,9 +15,9 @@ public class AverageEvenNumbers {
 
     public static double calculateAverageOfEvenNumbers(List<Integer> numbers) {
         return numbers.stream()
-                .filter(n -> n % 2 == 0) // Фильтруем четные числа
-                .mapToInt(Integer::intValue) // Преобразуем в IntStream
-                .average() // Вычисляем среднее значение
-                .orElse(0.0); // Если нет четных чисел, возвращаем 0.0
+                .filter(n -> n % 2 == 0)
+                .mapToInt(Integer::intValue)
+                .average()
+                .orElse(0.0);
     }
 }
